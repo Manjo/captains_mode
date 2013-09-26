@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  state: MyString
+  team_one: MyString
+  team_two: MyString
+  ban_one: MyText
+  ban_two: MyText
+  pick_one: MyText
+  pick_two: MyText
+  unique_token: MyString
+
+two:
+  state: MyString
+  team_one: MyString
+  team_two: MyString
+  ban_one: MyText
+  ban_two: MyText
+  pick_one: MyText
+  pick_two: MyText
+  unique_token: MyString
