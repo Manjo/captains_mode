@@ -6,7 +6,6 @@ class Lobby < ActiveRecord::Base
   # Using this to publish the correct event for Redis
   # Should I probably use an observer pattern instead?
   attr_accessor :event_contents
-  attr_accessible :event_contents
   
   before_create :assign_unique_token
   after_save :notify_event
