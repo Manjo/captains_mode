@@ -1,0 +1,33 @@
+<h1>Lobbies#show</h1>
+<h1>Current state:<h1>
+<ul>
+  <li><%= @lobby.state %>
+</ul>
+
+<h2>Team one bans:<h2>
+<ul>
+<% @lobby.bans_one.each do |ban| %>
+  <li> <%= ban %> </li>
+<% end %>
+</ul>
+    
+<h2>Team two bans:<h2>
+<ul>
+<% @lobby.bans_two.each do |ban| %>
+  <li> <%= ban %> </li>
+<% end %>
+</ul>
+
+<h2>Team one picks:<h2>
+<ul>
+<% @lobby.picks_one.each do |pick| %>
+  <li> <%= pick %> </li>
+<% end %>
+</ul>
+
+<h2>Team two picks:<h2>
+<ul>
+<% @lobby.picks_two.each do |pick| %>
+  <li> <%= pick %> </li>
+<% end %>
+</ul>

@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Captainmode::Application.load_tasks
+CaptainMode::Application.load_tasks

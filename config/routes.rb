@@ -1,4 +1,14 @@
-Captainmode::Application.routes.draw do
+CaptainMode::Application.routes.draw do
+  
+  resources :lobbies, only: [:create, :show, :index] do
+    member do
+      post 'register'
+      post 'ban'
+      post 'pick'
+      get  'stream'
+    end
+  end
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

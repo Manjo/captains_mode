@@ -1,0 +1,17 @@
+<h1>Lobbies Index</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  
+  <% @lobbies.each do |lobby| %>
+    <tr>
+      <td><%= link_to 'Show', lobby %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to 'Create Lobby', lobbies_path, :method => :post %>

@@ -13,6 +13,9 @@ gem 'puma'
 gem 'state_machine'
 gem 'ruby-graphviz', :require => 'graphviz'
 
+# Use Redis for pub/sub architecture
+gem 'redis'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
