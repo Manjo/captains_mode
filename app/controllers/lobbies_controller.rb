@@ -25,6 +25,7 @@ class LobbiesController < ApplicationController
   # TODO Inform a user if they're a captain (in case of refresh)
   def show
     @lobby = Lobby.find_by_unique_token!(params[:id])
+    @characters = ["Wonder", "Batman", "Zatanna", "Flash", "Joker"]
   end
   
   def stream

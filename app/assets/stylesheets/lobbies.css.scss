@@ -1,3 +1,177 @@
 // Place all the styles related to the Lobbies controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'colors';
+@import 'fonts';
+
+* { 
+  margin: 0; 
+  padding: 0;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box; 
+}
+
+html {
+  font-family: $font_stack;
+}
+
+.container {
+  background-color: $background_color;
+  margin: 0 auto;
+  width: 960px; // Static size app
+  height: 710px; // Static size app
+  border: solid red 5px;
+  
+  .title {
+    text-align: right;
+    font-size: $title_font_size;
+    font-weight: lighter;
+    color: $title_color;
+    margin-bottom: 6px;
+  }
+}
+
+.column {
+  max-height: 100%;
+  width: 50%;
+  float: left;
+}
+
+.content { 
+  border: solid $content_border_color 8px;
+  background-color: $content_area_color;
+}
+
+.left_content {
+  margin: 0px 10px 0px 0px;
+}
+
+.right_content {
+  margin: 10px 0px 10px 10px;
+}
+
+.champions {
+  padding: 10px;
+  // height: 637px;
+  
+  ul, li {
+    display: inline-block;
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 2px 1px;
+    
+    div {
+      display: inline-block;
+      width: 79px; /* Computed width for 5 columns per row */
+      height: 37px; /* Height of the image based on computed width */
+      border: solid black 1px;
+    }
+  }
+  
+  li:nth-child(5n+1) { margin-left: 0;  } /* Start of every new row */
+  li:nth-child(5n)   { margin-right: 0; } /* End of every new row */
+}
+
+.team {
+  padding: 3px 4px;
+  height: 143px;
+  margin-top: 0;
+
+  .team_name {
+    text-align: right;
+    font-size: $team_font_size;
+    font-weight: bold;
+    margin-right: 3px;
+  }
+
+  .bans {
+    width: 50px;
+    float: left;
+    padding: 0px 1px;
+    margin-top: -8px;
+    margin-right: 1px;
+    color: $ban_color;
+
+    .bans_header {
+      text-align: center;
+      font-size: $bans_font_size;
+      font-style: oblique;
+      font-weight: lighter;
+    }
+
+    ul, li {
+      margin-left: 1px;
+      display: inline-block;
+      list-style-type: none;
+      list-style-position: inside;
+    
+      div {
+        display: inline-block;
+        width: 43px;
+        height: 21px;
+        background-color: $background_color;
+        border: solid $box_stroke 1px;
+      }
+    }
+  }
+
+  .picks {
+    float: right;
+    width: 390px;
+    margin-top: -8px;
+    padding-top: 16px;
+
+    ul, li {
+      display: inline-block;
+      list-style-type: none;
+      list-style-position: inside;
+      margin: 0px 1px;
+  
+      div {
+        display: inline-block;
+        width: 72px; /* Computed width for 5 columns per row */
+        height: 72px; /* Height of the image based on computed width */
+        background-color: $background_color;
+        border: solid $box_stroke 1px;
+      }
+    }
+  }
+}
+
+.red_team {
+  .team_name {
+    color: $red_team_color;
+    text-shadow:  0 0 5px rgba(0,0,0, 0.75),
+                  -1px -1px 0 $red_stroke_color,
+                   1px -1px 0 $red_stroke_color,
+                  -1px  1px 0 $red_stroke_color,
+                   1px  1px 0 $red_stroke_color; 
+  }
+}
+
+.blue_team {
+  .team_name {
+    color: $blue_team_color;
+    text-shadow:  0 0 5px rgba(0,0,0, 0.75),
+              -1px -1px 0 $blue_stroke_color,
+               1px -1px 0 $blue_stroke_color,
+              -1px  1px 0 $blue_stroke_color,
+               1px  1px 0 $blue_stroke_color; 
+  }
+}
+
+.timeline {
+  height: 91px;
+  padding: 5px 9px;
+}
+
+.champ_info {
+  height: 230px;
+  padding: 24px 32px;
+}
+
+.clear {
+  clear: both;
+}
