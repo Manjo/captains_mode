@@ -18,3 +18,5 @@
 # Ignore RVM project files
 .ruby-version
 .ruby-gemset
+
+.DS_Store

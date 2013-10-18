@@ -62,11 +62,42 @@ html {
     list-style-position: inside;
     margin: 2px 1px;
     
-    div {
-      display: inline-block;
-      width: 79px; /* Computed width for 5 columns per row */
-      height: 37px; /* Height of the image based on computed width */
-      border: solid black 1px;
+    .character {
+      display: block;
+      width: 77px; /* Computed width for 5 columns per row (minus two for border) */
+      height: 35px; /* Height of the image based on computed width (minus two for border) */
+    }
+
+    .unselected {
+      padding: 1px;
+      background-color: $box_stroke;
+    }
+
+    .selected {
+      padding: 1px;
+      background-color: $box_selected_stroke;
+
+      .glow {
+        display:block;
+        position:relative;
+      }
+
+      .glow img {
+        display: block;
+      }
+
+      .glow::before {
+        display: block;
+        content:'';
+        position:absolute;
+        width:100%;
+        height:100%;
+        $glow_size: 0px 0px 3px 3px;
+        $glow_color: rgba(113,113,102,0.90);
+        -moz-box-shadow:inset $glow_size $glow_color;
+        -webkit-box-shadow:inset $glow_size $glow_color;
+        box-shadow:inset $glow_size $glow_color;
+      }
     }
   }
   
@@ -129,12 +160,47 @@ html {
       list-style-position: inside;
       margin: 0px 1px;
   
-      div {
+      .pick_icon {
         display: inline-block;
         width: 72px; /* Computed width for 5 columns per row */
         height: 72px; /* Height of the image based on computed width */
         background-color: $background_color;
         border: solid $box_stroke 1px;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+
+        /* Adds overlays on top of picks (if they exist) */
+        position: relative;
+
+        .name {
+          position: absolute;
+          text-align: center;
+          font-size: 14px;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+
+          background-color: rgba(0,0,0,0.45);
+          color: white;
+          border-bottom: 1px solid $box_stroke;
+        }
+
+        .title {
+          position: absolute;
+          text-align: center;
+          font-size: 10px;
+          bottom: 0px;
+          left: 0px;
+          margin-bottom: 0;
+          width: 100%;
+
+          background-color: rgba(0,0,0,0.45);
+          color:white;
+          border-top: 1px solid $box_stroke;
+        }
       }
     }
   }

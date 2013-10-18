@@ -6,10 +6,14 @@
   <div class="column">  
     <div class="content left_content champions">
       <ul>
-        <% 8.times do %>
-          <% @characters.each do |c| %>
-            <li> <div class="character"> <%= c %> </div> </li>
-          <% end %>
+        <% @characters.each do |c| %>
+          <li>
+              <div class=<%= c == 'batman' ? "selected" : "unselected" %>>
+                <a class="glow">
+                  <%= image_tag("/images/headshots/#{c}.jpg", class: "character") %>
+                </a>
+              </div>
+          </li>
         <% end %>
       </ul>
     </div>
@@ -30,7 +34,18 @@
       <div class="picks">
         <ul>
           <% 5.times do |n| %>
-            <li> <div class="pick_icon"> <%= %> </div> </li>
+            <li>
+              <div class="pick_icon"> 
+                  <img src="/images/portraits/batman.jpg" />
+                  <div class="name">
+                    Batman
+                  </div>
+                  <div class="title">
+                    The Dark Knight
+                  </div>
+              </div
+              </div> 
+            </li>
           <% end %>
         </ul>
       </div>
@@ -52,7 +67,7 @@
         <h2 class="bans_header">BANS</h2>
         <ul>
           <% 3.times do |n| %>
-            <li> <div class="ban_icon"> <%= %> </div> </li>
+            <li> <div class="ban_icon"> </div> </li>
           <% end %>
         </ul>
       </div>
@@ -60,7 +75,17 @@
       <div class="picks">
         <ul>
           <% 5.times do |n| %>
-            <li> <div class="pick_icon"> <%= %> </div> </li>
+            <li> 
+              <div class="pick_icon"> 
+                <img src="/images/portraits/batman.jpg" />
+                <div class="name">
+                  Batman
+                </div>
+                <div class="title">
+                  The Dark Knight
+                </div>
+              </div> 
+            </li>
           <% end %>
         </ul>
       </div>
