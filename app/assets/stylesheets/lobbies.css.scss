@@ -82,10 +82,6 @@ html {
         position:relative;
       }
 
-      .glow img {
-        display: block;
-      }
-
       .glow::before {
         display: block;
         content:'';
