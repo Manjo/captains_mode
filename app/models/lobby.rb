@@ -1,23 +1,24 @@
 require 'exceptions'
 
 # TODO: atomic transactions
+# TODO: Change picks and bans into relationships with champions
 
 class Lobby < ActiveRecord::Base
+  include Tokenable
+  
+  # Ordered by time of team creation
+  # This limit doesn't really prevent anything...
+  has_many :teams, -> { order('created_at ASC').limit(2) }
+
   # Using this to publish the correct event for Redis
   # Should I probably use an observer pattern instead?
   attr_accessor :event_contents
-  
-  before_create :assign_unique_token
+
   after_save :notify_event
   after_destroy :clear_redis
 
-  serialize :bans_one,  Array
-  serialize :bans_two,  Array
-  serialize :picks_one, Array
-  serialize :picks_two, Array
-
   state_machine :initial => :team_one_waiting do
-    event :register_team do
+    event :register do
       transition :team_one_waiting => :team_two_waiting,
                  :team_two_waiting => :team_one_ban
     end
@@ -41,18 +42,76 @@ class Lobby < ActiveRecord::Base
     end
   end
 
+  # === Utility ===
+  # TODO: Rewrite these less crappy...
+  def team(team)
+    case team
+    when :team_one
+      return nil if teams.size < 1
+      teams[0]
+    when :team_two
+      return nil if teams.size < 2
+      teams[1]
+    end
+  end
+
+  def bans(team=:both)
+    case team
+    when :team_one
+      return [] if teams.size < 1
+      teams[0].bans.map { |b| b.champion }
+    when :team_two
+      return [] if teams.size < 2
+      teams[1].bans.map { |b| b.champion }
+    when :both
+      [bans(:team_one), bans(:team_two)].flatten
+    end
+  end
+
+  def picks(team=:both)
+    case team
+    when :team_one
+      return [] if teams.size < 1
+      teams[0].picks.map { |p| p.champion }
+    when :team_two
+      return [] if teams.size < 2
+      teams[1].picks.map { |p| p.champion }
+    when :both
+      [picks(:team_one), picks(:team_two)].flatten
+    end
+  end
+
+  def captains(team=:both)
+    case team
+    when :team_one
+      return nil if teams.size < 1
+      teams[0].captain_id
+    when :team_two
+      return nil if teams.size < 2
+      teams[1].captain_id
+    when :both
+      return 
+      [captains(:team_one), captains(:team_two)]
+    end
+  end
+
+  def to_param
+    self.token
+  end
+  
+  def channel_name
+    self.token
+  end
+
+
+  # === Workflow Actions ===
+
   def register(user)
-    unless self.can_register_team?
+    unless self.can_register?
       raise Exceptions::InvalidEvent, "Team captains cannot be registered currently"
     end
-
-    case get_team_from_state
-    when :team_one
-      self.team_one = user
-    when :team_two
-      self.team_two = user
-    end
     
+    teams << Team.new(captain_id: user)
     @event_contents = [:register, user]
 
     super
@@ -62,13 +121,9 @@ class Lobby < ActiveRecord::Base
     unless self.can_ban?
       raise Exceptions::InvalidEvent, "Teams cannot currently ban"
     end
-    
-    case team
-    when :team_one
-      self.bans_one << name
-    when :team_two
-      self.bans_two << name
-    end
+
+    champ = Champion.find_by_name!(name)
+    team(team).ban(champ)
     
     @event_name = [:ban, name]
 
@@ -80,24 +135,25 @@ class Lobby < ActiveRecord::Base
       raise Exceptions::InvalidEvent, "Teams cannot currently pick"
     end
 
-    case team
-    when :team_one
-      self.picks_one << name
-    when :team_two
-      self.picks_two << name
-    end
+    champ = Champion.find_by_name!(name)
+    team(team).pick(champ)
     
     @event_name = [:pick, name]
     
     super
   end
+
+  # Returns nil if there's no captain with given id
+  def get_team_by_captain(user)
+    teams.find { |x| x.team_captain?(user) }
+  end
   
   # Returns false if the supplied user is not a registered team captain
-  def get_team(user)
-    case user
-    when self.team_one
+  def get_team_symbol(user)
+    case teams.find_index { |x| x.team_captain?(user) }
+    when 0
       :team_one
-    when self.team_two
+    when 1
       :team_two
     else
       false
@@ -114,18 +170,12 @@ class Lobby < ActiveRecord::Base
     return self.state_paths.events[0]
   end
   alias_method :current_action?, :current_action
-  
-  def to_param
-    self.unique_token
-  end
-  
-  def channel_name
-    self.unique_token.to_s
-  end
 
   private
     
     def build_event_json
+      return nil if @event_name.nil? # In case it's just a raw save
+
       json = {}
       json[:event] = @event_name[0].to_s
       if json[:event] == :pick or json[:event] == :ban
@@ -135,13 +185,13 @@ class Lobby < ActiveRecord::Base
     end
     
     def notify_event
-      redis = Redis.new
+      redis = Redis.new(port: REDIS_PORT)
       json = build_event_json
-      redis.publish(channel_name, json)
+      redis.publish(channel_name, json) unless json.nil?
     end
     
     def clear_redis
-      redis = Redis.new
+      redis = Redis.new(port: REDIS_PORT)
       redis.delete(channel_name)
     end
     
@@ -157,15 +207,5 @@ class Lobby < ActiveRecord::Base
 
       # Return the first 8 characters, will always contain 'team_one' or 'team_two'
       self.state[0,8].to_sym
-    end
-
-    def assign_unique_token
-      begin
-        self.unique_token = SecureRandom.hex(4)
-      end until unique_token?
-    end
-
-    def unique_token?
-      !Lobby.where(unique_token: self.unique_token).exists?
     end
 end

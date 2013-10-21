@@ -6,52 +6,21 @@
   <div class="column">  
     <div class="content left_content champions">
       <ul>
-        <% @characters.each do |c| %>
+        <% @champions.each do |c| %>
           <li>
-              <div class=<%= c == 'batman' ? "selected" : "unselected" %>>
-                <a class="glow">
-                  <%= image_tag("/images/headshots/#{c}.jpg", class: "character") %>
-                </a>
-              </div>
+            <div class=<%= c.name == 'Batman' ? "selected" : "unselected" %>>
+              <a class="glow">
+                <%= image_tag(champion_headshot_path(c), class: "character") %>
+              </a>
+            </div>
           </li>
         <% end %>
       </ul>
     </div>
   </div>
   
-  <div class="column">  
-    <div class="content right_content team red_team">
-      <h2 class="team_name">Red Team</h2>
-      <div class="bans">
-        <h2 class="bans_header">BANS</h2>
-        <ul>
-          <% 3.times do |n| %>
-            <li> <div class="ban_icon"> <%= %> </div> </li>
-          <% end %>
-        </ul>
-      </div>
-
-      <div class="picks">
-        <ul>
-          <% 5.times do |n| %>
-            <li>
-              <div class="pick_icon"> 
-                  <img src="/images/portraits/batman.jpg" />
-                  <div class="name">
-                    Batman
-                  </div>
-                  <div class="title">
-                    The Dark Knight
-                  </div>
-              </div
-              </div> 
-            </li>
-          <% end %>
-        </ul>
-      </div>
-
-      <div class="clear"></div>
-    </div>
+  <div class="column">
+    <%= render partial: "team", locals: { team_name: "Red Team", team_number: :team_one } %>
 
     <div class="vertical_spacer"></div>
     
@@ -61,37 +30,7 @@
 
     <div class="vertical_spacer"></div>
   
-    <div class="content right_content team blue_team">
-      <h2 class="team_name">Blue Team</h2>
-      <div class="bans">
-        <h2 class="bans_header">BANS</h2>
-        <ul>
-          <% 3.times do |n| %>
-            <li> <div class="ban_icon"> </div> </li>
-          <% end %>
-        </ul>
-      </div>
-
-      <div class="picks">
-        <ul>
-          <% 5.times do |n| %>
-            <li> 
-              <div class="pick_icon"> 
-                <img src="/images/portraits/batman.jpg" />
-                <div class="name">
-                  Batman
-                </div>
-                <div class="title">
-                  The Dark Knight
-                </div>
-              </div> 
-            </li>
-          <% end %>
-        </ul>
-      </div>
-
-      <div class="clear"></div>
-    </div>
+    <%= render partial: "team", locals: { team_name: "Blue Team", team_number: :team_two } %>
 
     <div class="vertical_spacer"></div>
   

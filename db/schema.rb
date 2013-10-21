@@ -11,7 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130926082314) do
+ActiveRecord::Schema.define(version: 20131020010445) do
+
+  create_table "champion_bans", force: true do |t|
+    t.integer  "champion_id"
+    t.integer  "team_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "champion_picks", force: true do |t|
+    t.integer  "champion_id"
+    t.integer  "team_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "champions", force: true do |t|
+    t.string   "name"
+    t.string   "role"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "title"
+  end
 
   create_table "lobbies", force: true do |t|
     t.string   "state"
@@ -21,7 +43,14 @@ ActiveRecord::Schema.define(version: 20130926082314) do
     t.text     "bans_two"
     t.text     "picks_one"
     t.text     "picks_two"
-    t.string   "unique_token"
+    t.string   "token"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "teams", force: true do |t|
+    t.string   "captain_id"
+    t.integer  "lobby_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

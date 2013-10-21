@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @champion.name %>
+</p>
+
+<p>
+  <strong>Role:</strong>
+  <%= @champion.role %>
+</p>
+
+<%= link_to 'Edit', edit_champion_path(@champion) %> |
+<%= link_to 'Back', champions_path %>

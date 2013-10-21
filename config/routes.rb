@@ -1,5 +1,7 @@
 CaptainMode::Application.routes.draw do
   
+  resources :champions, only: [:index, :show]
+
   resources :lobbies, only: [:create, :show, :index] do
     member do
       post 'register'

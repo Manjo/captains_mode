@@ -24,16 +24,12 @@ class LobbiesController < ApplicationController
 
   # TODO Inform a user if they're a captain (in case of refresh)
   def show
-    @lobby = Lobby.find_by_unique_token!(params[:id])
-    @characters = ["arcane_green_lantern", "atomic_green_lantern", 
-                   "atomic_wonder_woman", "batman", "catwoman", "cyborg", "doomsday", 
-                   "flash", "gaslight_batman", "gaslight_catwoman", "gaslight_joker", 
-                   "green_lantern", "joker", "nightmare_batman", "poison_ivy", 
-                   "shazam", "wonder_woman", "zatanna"]
+    set_lobby
+    @champions = Champion.all
   end
   
   def stream
-    @lobby = Lobby.find_by_unique_token!(params[:id])
+    set_lobby
     
     response.headers['Content-Type'] = 'text/event-stream'
     stream = SSE::Writer.new(response.stream)
@@ -53,22 +49,24 @@ class LobbiesController < ApplicationController
   end
   
   def register
-    @lobby = Lobby.find_by_unique_token!(params[:id])
+    set_lobby
     user = session[:user_id]
     @lobby.register(user)
     render :json => { :message => "Registered as #{team_name(user)}"}, :status => :ok
   end
   
+  # TODO Validate champion names
   def ban
-    @lobby = Lobby.find_by_unique_token!(params[:id])
+    set_lobby
     team = find_team
     name = params[:name]
     @lobby.ban(team, name)
     render :json => { :message => "#{team_name(team)} has banned #{name}"}, :status => :ok
   end
   
+  # TODO Validate champion names
   def pick
-    @lobby = Lobby.find_by_unique_token!(params[:id])
+    set_lobby
     team = find_team
     name = params[:name]
     @lobby.pick(team, name)
@@ -76,6 +74,10 @@ class LobbiesController < ApplicationController
   end
   
   private
+
+    def set_lobby
+      @lobby = Lobby.find_by_token!(params[:id])
+    end
   
     def team_name(team)
       unless team.is_a? Symbol
@@ -85,8 +87,8 @@ class LobbiesController < ApplicationController
     end
     
     def find_team
-      team = @lobby.get_team(session[:user_id])
-      raise Exceptions::InvalidSession if team == false
+      team = @lobby.get_team_by_captain(session[:user_id])
+      raise Exceptions::InvalidSession if team.nil?
       team
     end
   

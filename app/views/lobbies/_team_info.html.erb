@@ -1,0 +1,35 @@
+<div class="bans">
+  <h2 class="bans_header">BANS</h2>
+  <ul>
+    <% bans = @lobby.bans(team) %>
+    <% 1.times do |i| %>
+      <% c = bans[i] %>
+      <li> 
+        <div class="ban_icon"> 
+          <%= c.nil? ? "" : image_tag(champion_headshot_path(c)) %> 
+        </div> 
+      </li>
+    <% end %>
+  </ul>
+</div>
+
+<div class="picks">
+  <ul>
+    <% picks = @lobby.picks(team) %>
+    <% 5.times do |i| %>
+      <% c = picks[i] %>
+      <li>
+        <div class="pick_icon"> 
+            <%= c.nil? ? "" : image_tag(champion_portrait_path(c)) %>
+            <div class="name">
+              <%= c.nil? ? "" : c.name %>
+            </div>
+            <div class="title">
+              <%= c.nil? ? "" : c.title %>
+            </div>
+        </div
+        </div> 
+      </li>
+    <% end %>
+  </ul>
+</div>
