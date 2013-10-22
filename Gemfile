@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
@@ -13,8 +14,8 @@ gem 'puma'
 gem 'state_machine'
 gem 'ruby-graphviz', :require => 'graphviz'
 
-# Use Redis for pub/sub architecture
-gem 'redis'
+# Use wisper for pub/sub
+gem 'wisper', '~> 1.2.0'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'

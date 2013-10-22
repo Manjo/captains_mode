@@ -4,18 +4,19 @@ require 'exceptions'
 # TODO: Change picks and bans into relationships with champions
 
 class Lobby < ActiveRecord::Base
+  include Wisper::Publisher
   include Tokenable
   
   # Ordered by time of team creation
   # This limit doesn't really prevent anything...
-  has_many :teams, -> { order('created_at ASC').limit(2) }
+  has_many :teams, -> { order('created_at ASC').limit(2) }, dependent: :destroy
 
   # Using this to publish the correct event for Redis
   # Should I probably use an observer pattern instead?
   attr_accessor :event_contents
 
-  after_save :notify_event
-  after_destroy :clear_redis
+  after_save :publish_event
+
 
   state_machine :initial => :team_one_waiting do
     event :register do
@@ -171,11 +172,14 @@ class Lobby < ActiveRecord::Base
   end
   alias_method :current_action?, :current_action
 
+  def remove_listener(listener)
+    local_registrations.delete_if { |reg| reg.listener == listener }
+  end
+  alias_method :unsubscribe, :remove_listener
+
   private
     
     def build_event_json
-      return nil if @event_name.nil? # In case it's just a raw save
-
       json = {}
       json[:event] = @event_name[0].to_s
       if json[:event] == :pick or json[:event] == :ban
@@ -184,15 +188,10 @@ class Lobby < ActiveRecord::Base
       json[:next] = next_event
     end
     
-    def notify_event
-      redis = Redis.new(port: REDIS_PORT)
+    def publish_event
+      return if @event_name.nil? # Don't publish if it's just a raw save (i.e. creation)
       json = build_event_json
-      redis.publish(channel_name, json) unless json.nil?
-    end
-    
-    def clear_redis
-      redis = Redis.new(port: REDIS_PORT)
-      redis.delete(channel_name)
+      publish(:update, json)
     end
     
     def next_event

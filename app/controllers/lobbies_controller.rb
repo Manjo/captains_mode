@@ -32,20 +32,7 @@ class LobbiesController < ApplicationController
     set_lobby
     
     response.headers['Content-Type'] = 'text/event-stream'
-    stream = SSE::Writer.new(response.stream)
-    redis = Redis.new
-    
-    begin
-      redis.subscribe(@lobby.channel_name) do |on|
-        on.message do |event, data|
-          e = data.delete(:event)
-          stream.write(JSON.parse(data).to_json, :event => data[:event])
-        end
-      end
-    rescue IOError
-    ensure
-      stream.close
-    end
+    LobbyListener.new(@lobby, response.stream).subscribe
   end
   
   def register

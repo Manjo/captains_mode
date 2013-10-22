@@ -74,7 +74,6 @@ GEM
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
-    redis (3.0.5)
     ruby-graphviz (1.0.9)
     sass (3.2.10)
     sass-rails (4.0.0)
@@ -108,6 +107,7 @@ GEM
     uglifier (2.2.1)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
+    wisper (1.2.1)
 
 PLATFORMS
   ruby
@@ -118,7 +118,6 @@ DEPENDENCIES
   jquery-rails
   puma
   rails (= 4.0.0)
-  redis
   ruby-graphviz
   sass-rails (~> 4.0.0)
   sdoc
@@ -126,3 +125,4 @@ DEPENDENCIES
   state_machine
   turbolinks
   uglifier (>= 1.3.0)
+  wisper (~> 1.2.0)

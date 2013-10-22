@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131020010445) do
+ActiveRecord::Schema.define(version: 20131022041213) do
 
   create_table "champion_bans", force: true do |t|
     t.integer  "champion_id"
@@ -37,12 +37,6 @@ ActiveRecord::Schema.define(version: 20131020010445) do
 
   create_table "lobbies", force: true do |t|
     t.string   "state"
-    t.string   "team_one"
-    t.string   "team_two"
-    t.text     "bans_one"
-    t.text     "bans_two"
-    t.text     "picks_one"
-    t.text     "picks_two"
     t.string   "token"
     t.datetime "created_at"
     t.datetime "updated_at"
