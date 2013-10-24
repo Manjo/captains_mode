@@ -1,5 +1,5 @@
-<div class="content right_content team <%= team_name.parameterize.underscore %>">
-  <h2 class="team_name"><%= team_name %></h2>
-  <%= render partial: "team_info", locals: {team: team_number} %>
+<div class="content team" side="right" id=<%= color %>>
+  <h2 class="team-title <%= "#{color}-glow" %>" %><%= color.capitalize %> Team</h2>
+  <%= render partial: "team_info", locals: {team: team } %>
   <div class="clear"></div>
 </div>

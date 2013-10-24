@@ -1,0 +1,23 @@
+@import "lobbies/partials/base";
+
+html {
+  font-family: $font_stack;
+}
+
+.red-glow {
+    color: $red-team-color;
+    text-shadow:  0 0 5px rgba(0,0,0, 0.75),
+                -1px -1px 0 $red-team-bd,
+                 1px -1px 0 $red-team-bd,
+                -1px  1px 0 $red-team-bd,
+                 1px  1px 0 $red-team-bd;
+}
+
+.blue-glow {
+    color: $blue-team-color;
+    text-shadow:  0 0 5px rgba(0,0,0, 0.75),
+                -1px -1px 0 $blue-team-bd,
+                 1px -1px 0 $blue-team-bd,
+                -1px  1px 0 $blue-team-bd,
+                 1px  1px 0 $blue-team-bd;
+}

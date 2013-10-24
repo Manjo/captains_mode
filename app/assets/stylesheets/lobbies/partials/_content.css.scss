@@ -1,0 +1,19 @@
+@import "lobbies/partials/base";
+
+.content { 
+  border: solid $content-bd-color 8px;
+  background-color: $content-bg-color;
+
+  &[side="left"] {
+  	margin: 0px 10px 0px 0px;
+  }
+
+  &[side="right"] {
+  	margin: 10px 0px 10px 10px;
+
+  	// Remove the top buffer for the first (so it sets flush)
+  	&:first-child {
+  		margin-top: 0px;
+  	}
+  }
+}

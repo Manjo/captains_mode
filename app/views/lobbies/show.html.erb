@@ -1,17 +1,15 @@
-<body class="container">
+<body>
   <div class="header">
     <h1 class="title">Captain's Mode</h1>
   </div>
   
-  <div class="column">  
-    <div class="content left_content champions">
+  <div class="column" type="left">  
+    <div class="content champ-select" side="left">
       <ul>
         <% @champions.each do |c| %>
           <li>
-            <div class=<%= c.name == 'Batman' ? "selected" : "unselected" %>>
-              <a class="glow">
-                <%= image_tag(champion_headshot_path(c), class: "character") %>
-              </a>
+            <div class="champ-box" type="champ-select" state=<%= c.name == 'Batman' ? "highlighted" : ""%>>
+              <%= champion_headshot_image(c) %>
             </div>
           </li>
         <% end %>
@@ -20,21 +18,21 @@
   </div>
   
   <div class="column">
-    <%= render partial: "team", locals: { team_name: "Red Team", team_number: :team_one } %>
+    <%= render partial: "team", locals: { team: @lobby.team(:team_one), color: "red" } %>
 
     <div class="vertical_spacer"></div>
     
-    <div class="content right_content timeline">
+    <div class="content right_content timeline" side="right">
       Timeline
     </div>
 
     <div class="vertical_spacer"></div>
   
-    <%= render partial: "team", locals: { team_name: "Blue Team", team_number: :team_two } %>
+    <%= render partial: "team", locals: { team: @lobby.team(:team_two), color: "blue" } %>
 
     <div class="vertical_spacer"></div>
   
-    <div class="content right_content champ_info">
+    <div class="content right_content champ_info" side="right">
       Champ Info
     </div>
   </div>

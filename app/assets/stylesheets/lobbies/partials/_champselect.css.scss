@@ -1,0 +1,21 @@
+.champ-box {
+  &[type="champ-select"] {
+    width: 81px;
+    height: 39px;
+  }
+}
+
+.champ-select {
+  padding: 10px;
+  // height: 637px;
+  
+  ul, li {
+    display: inline-block;
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 2px 1px;
+  }
+  
+  li:nth-child(5n+1) { margin-left: 0;  } /* Start of every new row */
+  li:nth-child(5n)   { margin-right: 0; } /* End of every new row */
+}

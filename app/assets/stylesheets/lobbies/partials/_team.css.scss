@@ -1,0 +1,63 @@
+@import "lobbies/partials/base";
+
+.champ-box {
+  &[type="bans"] {
+    width: 43px;
+    height: 21px;
+  }
+
+  &[type="picks"] {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+.team {
+  padding: 3px 4px;
+  height: 143px;
+  margin-top: 0;
+
+  .team-title {
+    font-size: $team-font-size;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 3px;
+  }
+
+  .bans {
+    width: 50px;
+    float: left;
+    padding: 0px 1px;
+    margin-top: -8px;
+    margin-right: 1px;
+    color: $ban-color;
+
+    .bans_header {
+      text-align: center;
+      font-size: $bans-font-size;
+      font-style: oblique;
+      font-weight: lighter;
+    }
+
+    ul, li {
+      margin-left: 1px;
+      display: inline-block;
+      list-style-type: none;
+      list-style-position: inside;
+    }
+  }
+
+  .picks {
+    float: right;
+    width: 390px;
+    margin-top: -10px;
+    padding-top: 16px;
+
+    ul, li {
+      display: inline-block;
+      list-style-type: none;
+      list-style-position: inside;
+      margin: 0px 1px;
+    }
+  }
+}
