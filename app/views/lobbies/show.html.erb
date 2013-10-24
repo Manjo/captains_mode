@@ -21,10 +21,8 @@
     <%= render partial: "team", locals: { team: @lobby.team(:team_one), color: "red" } %>
 
     <div class="vertical_spacer"></div>
-    
-    <div class="content right_content timeline" side="right">
-      Timeline
-    </div>
+
+    <%= render partial: "timeline" %>
 
     <div class="vertical_spacer"></div>
   
@@ -32,9 +30,7 @@
 
     <div class="vertical_spacer"></div>
   
-    <div class="content right_content champ_info" side="right">
-      Champ Info
-    </div>
+    <%= render partial: "champ_info" %>
   </div>
 
   <div class="clear"></div>
