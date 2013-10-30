@@ -1,0 +1,19 @@
+.champ-box {
+  &[type="champ-info"] {
+    width: 128px;
+    height: 128px;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+}
+
+.champ-info {
+  height: 230px;
+  padding: 24px 32px;
+}

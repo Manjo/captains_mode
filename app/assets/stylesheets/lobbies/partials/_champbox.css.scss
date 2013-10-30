@@ -35,30 +35,28 @@
 	}
 
 	// Overlay classes
-    .name {
-      position: absolute;
-      text-align: center;
-      font-size: 14px;
-      top: 0px;
-      left: 0px;
-      width: 100%;
+  .name {
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    left: 0px;
+    width: 100%;
 
-      background-color: rgba(0,0,0,0.45);
-      color: white;
-      border-bottom: 1px solid $champion-box-bd-unselected;
-    }
+    background-color: $champion-box-overlay-color;
+    color: $champion-box-overlay-text;
+    border-bottom: 1px solid $champion-box-bd-unselected;
+  }
 
-    .title {
-      position: absolute;
-      text-align: center;
-      font-size: 10px;
-      bottom: 0px;
-      left: 0px;
-      margin-bottom: 0;
-      width: 100%;
+  .title {
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+    margin-bottom: 0;
+    width: 100%;
 
-      background-color: $champion-box-overlay-color;
-      color:white;
-      border-top: 1px solid $champion-box-bd-unselected;
-    }
+    background-color: $champion-box-overlay-color;
+    color: $champion-box-overlay-text;
+    border-top: 1px solid $champion-box-bd-unselected;
+  }
 }

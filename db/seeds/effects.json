@@ -1,0 +1,613 @@
+[
+  {
+    "name": "Atlantis Aura",
+    "type": "Passive",
+    "desc": "+15% Attack Speed and +10% Attack Lifesteal for all nearby allies.",
+    "tags": [
+      "Attack Speed",
+      "Attack Lifesteal"
+    ]
+  },
+  {
+    "name": "Targeting System",
+    "type": "Active",
+    "desc": "Activate on a target to slow them by 20% and mark them for 4 seconds. Allies who Basic Attack marked targets are healed 10 Health per hit (60 second cooldown).",
+    "tags": [
+      "Health Regen"
+    ]
+  },
+  {
+    "name": "Razor 1",
+    "type": "Passive",
+    "desc": "+ 10% Attack Penetration",
+    "tags": [
+      "Attack Penetration"
+    ]
+  },
+  {
+    "name": "Razor 2",
+    "type": "Passive",
+    "desc": "+ 35% Attack Penetration",
+    "tags": [
+      "Attack Penetration"
+    ]
+  },
+  {
+    "name": "Purge",
+    "type": "Active",
+    "desc": "Activate to purge negative status effects (60 second cooldown).",
+    "tags": []
+  },
+  {
+    "name": "Desperate Speed",
+    "type": "Passive",
+    "desc": "Upon falling below 50% health you gain 20% Attack Speed and 10 Move Speed until you do not deal or take damage for 5 seconds.",
+    "tags": [
+      "Attack Speed",
+      "Move Speed"
+    ]
+  },
+  {
+    "name": "Kinetic Armor",
+    "type": "Passive",
+    "desc": "Your Basic Attacks steal 3 Attack Armor for 5 seconds (max 5 stacks).",
+    "tags": [
+      "Attack Armor",
+      "Attack Penetration"
+    ]
+  },
+  {
+    "name": "Piercing 1",
+    "type": "Passive",
+    "desc": "+ 10 Attack Penetration",
+    "tags": [
+      "Attack Penetration"
+    ]
+  },
+  {
+    "name": "Piercing 2",
+    "type": "Passive",
+    "desc": "+ 15 Attack Penetration",
+    "tags": [
+      "Attack Penetration"
+    ]
+  },
+  {
+    "name": "Wounding",
+    "type": "Passive",
+    "desc": "Targets hit by your Basic Attacks have their healing and regeneration reduced by 50% for 1.5 seconds.",
+    "tags": [
+      "Attack Penetration"
+    ]
+  },
+  {
+    "name": "Will Battery",
+    "type": "Passive",
+    "desc": "Gain 4 Max Will whenever you use a skill that costs Will (3 second Cooldown). Bonus caps at + 500 bonus Will.",
+    "tags": [
+      "Will"
+    ]
+  },
+  {
+    "name": "Force of Will",
+    "type": "Passive",
+    "desc": "Grants Attack Damage equal to 2% of your Max Will.",
+    "tags": [
+      "Attack Damage"
+    ]
+  },
+  {
+    "name": "Intensity",
+    "type": "Active",
+    "desc": "Toggle on to spend 3% of your current Will to deal bonus Attack Damage equal to 2 times the spent Will to all targets of single-target skills and basic attacks.",
+    "tags": [
+      "Attack Damage"
+    ]
+  },
+  {
+    "name": "Slayer",
+    "type": "Passive",
+    "desc": "Your Basic Attacks deal 5% of the target's current Health as bonus Power Damage.",
+    "tags": []
+  },
+  {
+    "name": "Deadly",
+    "type": "Passive",
+    "desc": "+ 50% Critical Damage",
+    "tags": []
+  },
+  {
+    "name": "Attack Harvest",
+    "type": "Passive",
+    "desc": "Gain 2 Attack Damage every 90 seconds and with each Champion Kill or Assist (max 80 Attack Damage).",
+    "tags": [
+      "Attack Damage"
+    ]
+  },
+  {
+    "name": "Attack Harrier",
+    "type": "Passive",
+    "desc": "Basic Attacks slow your target's Move Speed by 30% decaying over 2 seconds (20% slow for Ranged Basic Attacks).",
+    "tags": []
+  },
+  {
+    "name": "Marauder Burst 1",
+    "type": "Passive",
+    "desc": "+ 10% Damage to Creatures",
+    "tags": []
+  },
+  {
+    "name": "Marauder Burst 2",
+    "type": "Passive",
+    "desc": "+ 15% Damage to Creatures",
+    "tags": []
+  },
+  {
+    "name": "Marauder Burst 3",
+    "type": "Passive",
+    "desc": "+ 20% Damage to Creatures",
+    "tags": []
+  },
+  {
+    "name": "Marauder Burst 4",
+    "type": "Passive",
+    "desc": "+ 25% Damage to Creatures",
+    "tags": []
+  },
+  {
+    "name": "Marauder Edge",
+    "type": "Passive",
+    "desc": "+ 10 Basic Attack Damage to Creatures (Bypasses Armor)",
+    "tags": []
+  },
+  {
+    "name": "Shockwave 1",
+    "type": "Passive",
+    "desc": "Your Basic Attacks explode, dealing 10% of your total Attack Damage to other enemies nearby.",
+    "tags": []
+  },
+  {
+    "name": "Shockwave 2",
+    "type": "Passive",
+    "desc": "Your Basic Attacks explode, dealing 5 damage + 30% of your total Attack Damage to other enemies nearby.",
+    "tags": []
+  },
+  {
+    "name": "Shockwave 3",
+    "type": "Passive",
+    "desc": "Your Basic Attacks explode, dealing 10 damage + 50% of your total Attack Damage to other enemies nearby.",
+    "tags": []
+  },
+  {
+    "name": "Attack Syphon",
+    "type": "Passive",
+    "desc": "Autoattacks heal you for 5 health.",
+    "tags": [
+      "Health Regen"
+    ]
+  },
+  {
+    "name": "Refundable",
+    "type": "Passive",
+    "desc": "You can sell this Artifact back for full value.",
+    "tags": []
+  },
+  {
+    "name": "Time Anchor",
+    "type": "Active",
+    "desc": "Activate once to record a position. Activate again within 5 seconds to return to that position (60 second cooldown).",
+    "tags": []
+  },
+  {
+    "name": "Powerburst",
+    "type": "Passive",
+    "desc": "Gain 50 Power Damage for 3 seconds every 5th Basic Attack",
+    "tags": [
+      "Power Damage"
+    ]
+  },
+  {
+    "name": "Attack Damage Collector",
+    "type": "Passive",
+    "desc": "+ 1 Attack Damage and 0.2% Attack Lifesteal when you collect a coin (max 30 stacks, lose half of death).",
+    "tags": [
+      "Attack Damage",
+      "Attack Lifesteal"
+    ]
+  },
+  {
+    "name": "Response Shield",
+    "type": "Passive",
+    "desc": "Gains a shield that blocks 200 damage for 5 seconds when you fall below 30% Health.",
+    "tags": []
+  },
+  {
+    "name": "Desperate Endurance",
+    "type": "Passive",
+    "desc": "Upon falling below 30% Health, gain 10% Attack and Power Lifesteal until you do not take or deal damage for 5 seconds.",
+    "tags": [
+      "Power Lifesteal",
+      "Attack Lifesteal"
+    ]
+  },
+  {
+    "name": "Attack Fervor",
+    "type": "Passive",
+    "desc": "Basic Attacks grant 10% Move Speed for 1.5 seconds.",
+    "tags": [
+      "Move Speed"
+    ]
+  },
+  {
+    "name": "Frenzy",
+    "type": "Active",
+    "desc": "Activate to gain 20 Attack Damage and 20% Attack Speed while increasing damage taken by 25% for 5 seconds (60 second cooldown).",
+    "tags": [
+      "Attack Damage",
+      "Attack Speed"
+    ]
+  },
+  {
+    "name": "Mercury's Gift",
+    "type": "Active",
+    "desc": "Grant a 30% Move Speed buff to all nearby allies for 4 seconds (60 second cooldown).",
+    "tags": [
+      "Move Speed"
+    ]
+  },
+  {
+    "name": "Health Balance",
+    "type": "Passive",
+    "desc": "Gain +1% Health Regen per 1% of Health you are missing.",
+    "tags": [
+      "Health Regen"
+    ]
+  },
+  {
+    "name": "Investment(Stacking)",
+    "type": "Passive",
+    "desc": "Gain 3 Credits every 10 seconds.",
+    "tags": [
+      "Credits"
+    ]
+  },
+  {
+    "name": "Skill Block",
+    "type": "Passive",
+    "desc": "Grants a Skill Shield that prevents the damage and effects of the next enemy skill. This effect has a 30 second cooldown.",
+    "tags": []
+  },
+  {
+    "name": "Burning Core",
+    "type": "Active",
+    "desc": "Activate to deal 100 Power Damage to all nearby enemies and then, for 15 seconds, deals 40-20 decaying Power Damage per second to enemies nearby (60 second cooldown).",
+    "tags": []
+  },
+  {
+    "name": "Mystical Conversion",
+    "type": "Active",
+    "desc": "Activate to grant Power Armor equal to 25% of your Attack Armor for 3 seconds (60 second cooldown).",
+    "tags": [
+      "Power Armor"
+    ]
+  },
+  {
+    "name": "Vitality",
+    "type": "Passive",
+    "desc": "+ 20% Healing Received",
+    "tags": [
+      "Health Regen"
+    ]
+  },
+  {
+    "name": "Dampening Aura",
+    "type": "Passive",
+    "desc": "- 20% Attack Speed for all nearby enemies.",
+    "tags": []
+  },
+  {
+    "name": "Toughness",
+    "type": "Passive",
+    "desc": "Blocks 5 damage from Champion basic attacks.",
+    "tags": []
+  },
+  {
+    "name": "Oa Aura",
+    "type": "Passive",
+    "desc": "- 15 Power Armor for all nearby enemies.",
+    "tags": []
+  },
+  {
+    "name": "Protection Field",
+    "type": "Active",
+    "desc": "Grants a temporary 40 + 10 per level Health shield to you and nearby allies that lasts for 4 seconds (60 second cooldown).",
+    "tags": []
+  },
+  {
+    "name": "Olympus Aura",
+    "type": "Passive",
+    "desc": "+ 15 Attack Armor, + 15 Power Armor, and + 10 Health Regen per 10 seconds for all nearby allies.",
+    "tags": [
+      "Attack Armor",
+      "Power Armor",
+      "Health Regen"
+    ]
+  },
+  {
+    "name": "Bastion",
+    "type": "Active",
+    "desc": "Activate to reduce damage taken by 25% and reduce damage dealt by 25% for 3 seconds (60 second cooldown).",
+    "tags": []
+  },
+  {
+    "name": "Armor Collector",
+    "type": "Passive",
+    "desc": "+ 1 Attack and Power Armor when you collect a coin (max 30 Attack and Power Armor, lose half on death).",
+    "tags": [
+      "Attack Armor",
+      "Power Armor"
+    ]
+  },
+  {
+    "name": "Lazarus Effect",
+    "type": "Passive",
+    "desc": "If you would fall to 0 health, you instead become invulnerable and unable to act for 4 seconds before returning to life at 25% Health and 50% Will (5 minute cooldown).",
+    "tags": []
+  },
+  {
+    "name": "Health Collector",
+    "type": "Passive",
+    "desc": "+ 7.5 Health and + 1.5 Health Regen when you collect a coin (max 225 Health, 45 Health Regen, lose half on death).",
+    "tags": [
+      "Health",
+      "Health Regen"
+    ]
+  },
+  {
+    "name": "Enforcement",
+    "type": "Passive",
+    "desc": "Gain 2% of your Max Health as additional Attack Damage.",
+    "tags": [
+      "Attack Damage"
+    ]
+  },
+  {
+    "name": "Iron Will",
+    "type": "Active",
+    "desc": "Toggle on to redirect 20% of damage taken to your Will instead.",
+    "tags": []
+  },
+  {
+    "name": "Mirror Defense 1",
+    "type": "Passive",
+    "desc": "+ 10% Attack Reflect",
+    "tags": []
+  },
+  {
+    "name": "Mirror Defense 2",
+    "type": "Passive",
+    "desc": "+ 20% Attack Reflect",
+    "tags": []
+  },
+  {
+    "name": "Mirror Defense 3",
+    "type": "Passive",
+    "desc": "+ 30% Attack Reflect",
+    "tags": []
+  },
+  {
+    "name": "Health Harvest",
+    "type": "Passive",
+    "desc": "Gain 15 Health every 90 seconds and with each Champion Kill or Assist (max 600 Health).",
+    "tags": [
+      "Health"
+    ]
+  },
+  {
+    "name": "Medisys",
+    "type": "Passive",
+    "desc": "On levelling up, regain 150 Health and Will over 10 seconds.",
+    "tags": [
+      "Health Regen",
+      "Will Regen"
+    ]
+  },
+  {
+    "name": "Will Force",
+    "type": "Passive",
+    "desc": "Grants Power Damage equal to 3% of your Max Will.",
+    "tags": [
+      "Power Damage"
+    ]
+  },
+  {
+    "name": "Skill Harrier",
+    "type": "Passive",
+    "desc": "Targets damaged by your skills lose 20% Move Speed for 1.5 seconds",
+    "tags": []
+  },
+  {
+    "name": "Charged Armor",
+    "type": "Passive",
+    "desc": "Your Basic Attacks steal 5 Power Armor for 5 seconds (max 5 stacks)",
+    "tags": [
+      "Power Penetration",
+      "Power Armor"
+    ]
+  },
+  {
+    "name": "Charged Attack",
+    "type": "Passive",
+    "desc": "Your Basic Attacks deal bonus Power Damage equal to 10 + 10% of your Power Damage",
+    "tags": []
+  },
+  {
+    "name": "Devastating 1",
+    "type": "Passive",
+    "desc": "+ 10 Power Penetration",
+    "tags": [
+      "Power Penetration"
+    ]
+  },
+  {
+    "name": "Devastating 2",
+    "type": "Passive",
+    "desc": "+ 15 Power Penetration",
+    "tags": [
+      "Power Penetration"
+    ]
+  },
+  {
+    "name": "Disintegration",
+    "type": "Passive",
+    "desc": "Dealing damage from skills applies an effect dealing 2% of the target's current Health per second for 3 seconds",
+    "tags": []
+  },
+  {
+    "name": "Will Balance",
+    "type": "Passive",
+    "desc": "Gain + 1% Will Regen per 1% of Will you are missing",
+    "tags": [
+      "Will Regen"
+    ]
+  },
+  {
+    "name": "Shrapnel",
+    "type": "Passive",
+    "desc": "After skill use, your next Basic Attack damages enemies behind your target equal to 25 + 50% of Power Damage (2 second cooldown).",
+    "tags": []
+  },
+  {
+    "name": "Energy Blast",
+    "type": "Active",
+    "desc": "Activate to deal 15% of your target's current Health as Power Damage and increase further damage you deal to them by 10% for 5 seconds (60 second cooldown).",
+    "tags": []
+  },
+  {
+    "name": "Stasis Field",
+    "type": "Active",
+    "desc": "Activate to become invulnerable, untargetable, immobile, and unable to act for 2 seconds (60 second cooldown).",
+    "tags": []
+  },
+  {
+    "name": "Blood Spirit",
+    "type": "Active",
+    "desc": "Release a restless spirit to seek out the nearest enemy champion, travelling up to 35m. If the spirit reaches them, the champion will be slowed and revealed for 5 seconds. You can release 3 spirits before you must refill by returning to base.",
+    "tags": []
+  },
+  {
+    "name": "Skilled Attack 1",
+    "type": "Active",
+    "desc": "After skill use, your next Basic Attack deals 25 + 25% Power Damage or 100% base Attack Damage (2 second cooldown). Activate to toggle.",
+    "tags": []
+  },
+  {
+    "name": "Skilled Attack 2",
+    "type": "Active",
+    "desc": "After skill use, your next Basic Attack deals 25 + 50% Power Damage or 150% base Attack Damage (2 second cooldown). Activate to toggle.",
+    "tags": []
+  },
+  {
+    "name": "Qward Aura",
+    "type": "Passive",
+    "desc": "+ 20 Power Damage and + 10% Power Lifesteal for all nearby allies. ",
+    "tags": [
+      "Power Damage",
+      "Power Lifesteal"
+    ]
+  },
+  {
+    "name": "Scanning",
+    "type": "Active",
+    "desc": "Place a device which reveals stealthed enemies and gives vision into stealth fields within the target area for 8 seconds (60 second cooldown).",
+    "tags": []
+  },
+  {
+    "name": "Arcane 1",
+    "type": "Passive",
+    "desc": " + 10% Power Penetration",
+    "tags": [
+      "Power Penetration"
+    ]
+  },
+  {
+    "name": "Arcane 2",
+    "type": "Passive",
+    "desc": " + 35% Power Penetration",
+    "tags": [
+      "Power Penetration"
+    ]
+  },
+  {
+    "name": "Will Restore",
+    "type": "Passive",
+    "desc": "Restores 8 Will when you collect a coin.",
+    "tags": [
+      "Will Regen"
+    ]
+  },
+  {
+    "name": "Power Damage Collector",
+    "type": "Passive",
+    "desc": "+ 1.5 Power Damage when you collect a coin (max 45 Power Damage, lose half on death).",
+    "tags": [
+      "Power Damage"
+    ]
+  },
+  {
+    "name": "Power Feedback",
+    "type": "Passive",
+    "desc": "+30% Power Damage.",
+    "tags": [
+      "Power Damage"
+    ]
+  },
+  {
+    "name": "Power Harvest",
+    "type": "Passive",
+    "desc": "Gain 3 Power Damage every 90 seconds with each Champion Kill or Assist (max 120 Power Damage)",
+    "tags": [
+      "Power Damage"
+    ]
+  },
+  {
+    "name": "Bleed Tunneling",
+    "type": "Consumable",
+    "desc": "Target an Environmental Object to create an entrance. Target a second Environmental Object to create an exit and open a connected portal for 15 seconds. Allies can rightclick to use the entrance and travel to the exit.",
+    "tags": []
+  },
+  {
+    "name": "Health Pack",
+    "type": "Consumable",
+    "desc": "Restores 150 Health over 15 seconds.",
+    "tags": [
+      "Health Regen"
+    ]
+  },
+  {
+    "name": "Will Pack",
+    "type": "Consumable",
+    "desc": "Restores 150 Will over 15 seconds.",
+    "tags": [
+      "Will Regen"
+    ]
+  },
+  {
+    "name": "Tektite Vial",
+    "type": "Active",
+    "desc": "Restores 100 Health and 100 Will over 15 seconds. Each use consumes 1 of 3 charges. Charges are refreshed when returning to base.",
+    "tags": [
+      "Health Regen",
+      "Will Regen"
+    ]
+  },
+  {
+    "name": "Blink Jump",
+    "type": "Active",
+    "desc": "Activate to immediately blink to a nearby location up to 5m away (120s cooldown). Cannot be used for 3 seconds after taking damage.",
+    "tags": [
+      "Health Regen",
+      "Will Regen"
+    ]
+  }
+]

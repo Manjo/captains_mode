@@ -1,0 +1,2357 @@
+[
+  {
+    "name": "Nil Weapon",
+    "stages": [
+      {
+        "buy": 500,
+        "sell": 165,
+        "stats": {
+          "Health": 75,
+          "Attack Damage": 10
+        },
+        "effects": [
+          "Attack Syphon"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Atlantis Gambit",
+    "stages": [
+      {
+        "buy": 250,
+        "sell": 225,
+        "stats": {
+          "Attack Lifesteal": 4
+        }
+      },
+      {
+        "buy": 750,
+        "sell": 565,
+        "stats": {
+          "Attack Lifesteal": 8
+        },
+        "effects": [
+          "Investment (Stacking)"
+        ]
+      },
+      {
+        "buy": 1750,
+        "sell": 1315,
+        "stats": {
+          "Attack Lifesteal": 8
+        },
+        "effects": [
+          "Atlantis Aura"
+        ]
+      },
+      {
+        "buy": 2250,
+        "sell": 1690,
+        "stats": {
+          "Attack Lifesteal": 8
+        },
+        "effects": [
+          "Atlantis Aura",
+          "Targeting System"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Promethium Mace",
+    "stages": [
+      {
+        "buy": 250,
+        "sell": 225,
+        "stats": {
+          "Attack Damage": 6
+        }
+      },
+      {
+        "buy": 500,
+        "sell": 375,
+        "stats": {
+          "Attack Damage": 12
+        }
+      },
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Attack Damage": 24
+        }
+      },
+      {
+        "buy": 1500,
+        "sell": 1500,
+        "stats": {
+          "Attack Damage": 32
+        },
+        "effects": [
+          "Refundable"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Zeiss Goggles",
+    "stages": [
+      {
+        "buy": 500,
+        "sell": 450,
+        "stats": {
+          "Attack Damage": 10,
+          "Critical Chance": 5
+        }
+      },
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Attack Damage": 20,
+          "Critical Chance": 10
+        }
+      },
+      {
+        "buy": 1500,
+        "sell": 1125,
+        "stats": {
+          "Attack Damage": 30,
+          "Critical Chance": 15
+        }
+      },
+      {
+        "buy": 2500,
+        "sell": 1875,
+        "stats": {
+          "Attack Damage": 40,
+          "Critical Chance": 20
+        },
+        "effects": [
+          "Frenzy"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Joker's Crowbar",
+    "stages": [
+      {
+        "buy": 500,
+        "sell": 450,
+        "stats": {
+          "Attack Damage": 15
+        }
+      },
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Attack Damage": 15
+        },
+        "effects": [
+          "Attack Harvest"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lobo's Chain",
+    "stages": [
+      {
+        "buy": 500,
+        "sell": 450,
+        "stats": {
+          "Health": 100,
+          "Attack Damage": 5
+        }
+      },
+      {
+        "buy": 1250,
+        "sell": 940,
+        "stats": {
+          "Health": 200,
+          "Attack Damage": 20
+        }
+      },
+      {
+        "buy": 2250,
+        "sell": 1690,
+        "stats": {
+          "Health": 300,
+          "Attack Damage": 30
+        }
+      },
+      {
+        "buy": 3500,
+        "sell": 2625,
+        "stats": {
+          "Health": 400,
+          "Attack Damage": 30
+        },
+        "effects": [
+          "Attack Harrier"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Huntress' Crossbow",
+    "stages": [
+      {
+        "buy": 750,
+        "sell": 565,
+        "stats": {
+          "Attack Damage": 15,
+          "Cooldown Reduction": 5
+        }
+      },
+      {
+        "buy": 1500,
+        "sell": 1125,
+        "stats": {
+          "Attack Damage": 30,
+          "Cooldown Reduction": 10
+        }
+      },
+      {
+        "buy": 2500,
+        "sell": 1875,
+        "stats": {
+          "Attack Damage": 50,
+          "Cooldown Reduction": 20
+        }
+      }
+    ]
+  },
+  {
+    "name": "Mega Rod",
+    "stages": [
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Attack Damage": 10,
+          "Attack Speed": 10
+        },
+        "effects": [
+          "Shockwave 1"
+        ]
+      },
+      {
+        "buy": 2000,
+        "sell": 1500,
+        "stats": {
+          "Attack Damage": 20,
+          "Attack Speed": 20
+        },
+        "effects": [
+          "Shockwave 2"
+        ]
+      },
+      {
+        "buy": 3000,
+        "sell": 2250,
+        "stats": {
+          "Attack Damage": 30,
+          "Attack Speed": 30
+        },
+        "effects": [
+          "Shockwave 3"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Velocity 9 Implants",
+    "stages": [
+      {
+        "buy": 750,
+        "sell": 565,
+        "stats": {
+          "Attack Speed": 15
+        }
+      },
+      {
+        "buy": 1500,
+        "sell": 1125,
+        "stats": {
+          "Move Speed": 10,
+          "Critical Chance": 10,
+          "Attack Speed": 20
+        }
+      },
+      {
+        "buy": 2250,
+        "sell": 1690,
+        "stats": {
+          "Move Speed": 15,
+          "Critical Chance": 15,
+          "Attack Speed": 30
+        }
+      },
+      {
+        "buy": 3250,
+        "sell": 2440,
+        "stats": {
+          "Move Speed": 15,
+          "Critical Chance": 20,
+          "Attack Speed": 50
+        },
+        "effects": [
+          "Attack Fervor"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Soultaker Katana",
+    "stages": [
+      {
+        "buy": 750,
+        "sell": 565,
+        "stats": {
+          "Attack Damage": 10,
+          "Attack Lifesteal": 5
+        }
+      },
+      {
+        "buy": 1500,
+        "sell": 1125,
+        "stats": {
+          "Attack Damage": 20,
+          "Attack Lifesteal": 10
+        }
+      },
+      {
+        "buy": 2250,
+        "sell": 1690,
+        "stats": {
+          "Attack Damage": 20,
+          "Attack Lifesteal": 10
+        },
+        "effects": [
+          "Attack Damage Collector"
+        ]
+      },
+      {
+        "buy": 3000,
+        "sell": 2250,
+        "stats": {
+          "Attack Damage": 30,
+          "Attack Lifesteal": 15
+        },
+        "effects": [
+          "Attack Damage Collector"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Atomic Axe",
+    "stages": [
+      {
+        "buy": 1500,
+        "sell": 1125,
+        "stats": {
+          "Attack Damage": 40
+        },
+        "effects": [
+          "Razor 1"
+        ]
+      },
+      {
+        "buy": 3000,
+        "sell": 2250,
+        "stats": {
+          "Attack Damage": 60
+        },
+        "effects": [
+          "Razor 2"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Marauder Knife",
+    "stages": [
+      {
+        "buy": 250,
+        "sell": 225,
+        "stats": {
+          "Attack Damage": 5
+        },
+        "effects": [
+          "Marauder Burst 1",
+          "Marauder Edge"
+        ]
+      },
+      {
+        "buy": 750,
+        "sell": 565,
+        "stats": {
+          "Attack Damage": 10,
+          "Attack Lifesteal": 5
+        },
+        "effects": [
+          "Marauder Burst 2",
+          "Marauder Edge"
+        ]
+      },
+      {
+        "buy": 1250,
+        "sell": 940,
+        "stats": {
+          "Attack Damage": 20,
+          "Attack Lifesteal": 10
+        },
+        "effects": [
+          "Marauder Burst 3",
+          "Marauder Edge"
+        ]
+      },
+      {
+        "buy": 2250,
+        "sell": 1690,
+        "stats": {
+          "Attack Damage": 50,
+          "Attack Lifesteal": 10
+        },
+        "effects": [
+          "Marauder Burst 4",
+          "Marauder Edge"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Coda Blade",
+    "stages": [
+      {
+        "buy": 500,
+        "sell": 375,
+        "stats": {
+          "Attack Damage": 12
+        }
+      },
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Attack Damage": 25
+        }
+      },
+      {
+        "buy": 1750,
+        "sell": 1125,
+        "stats": {
+          "Attack Damage": 40
+        },
+        "effects": [
+          "Piercing 1"
+        ]
+      },
+      {
+        "buy": 2500,
+        "sell": 1875,
+        "stats": {
+          "Attack Damage": 40
+        },
+        "effects": [
+          "Wounding",
+          "Piercing 2"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Cheetah's Claw",
+    "stages": [
+      {
+        "buy": 250,
+        "sell": 225,
+        "stats": {
+          "Attack Speed": 4,
+          "Attack Lifesteal": 1
+        }
+      },
+      {
+        "buy": 750,
+        "sell": 565,
+        "stats": {
+          "Attack Speed": 10,
+          "Attack Lifesteal": 5
+        }
+      },
+      {
+        "buy": 1250,
+        "sell": 940,
+        "stats": {
+          "Attack Speed": 15,
+          "Attack Lifesteal": 10
+        }
+      },
+      {
+        "buy": 2000,
+        "sell": 1500,
+        "stats": {
+          "Attack Speed": 20,
+          "Attack Lifesteal": 15
+        },
+        "effects": [
+          "Desperate Speed"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Shade's Cane",
+    "stages": [
+      {
+        "buy": 250,
+        "sell": 225,
+        "stats": {
+          "Attack Damage": 5
+        },
+        "effects": [
+          "Powerburst"
+        ]
+      },
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Attack Damage": 20,
+          "Power Damage": 15
+        },
+        "effects": [
+          "Powerburst"
+        ]
+      },
+      {
+        "buy": 2000,
+        "sell": 1500,
+        "stats": {
+          "Attack Damage": 40,
+          "Power Damage": 30
+        },
+        "effects": [
+          "Powerburst"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Rip Hunter's Time Pack",
+    "stages": [
+      {
+        "buy": 500,
+        "sell": 450,
+        "stats": {
+          "Attack Speed": 5,
+          "Cooldown Reduction": 5
+        }
+      },
+      {
+        "buy": 1250,
+        "sell": 940,
+        "stats": {
+          "Attack Speed": 20,
+          "Cooldown Reduction": 10
+        }
+      },
+      {
+        "buy": 2000,
+        "sell": 1500,
+        "stats": {
+          "Attack Speed": 30,
+          "Cooldown Reduction": 10
+        }
+      },
+      {
+        "buy": 3000,
+        "sell": 2250,
+        "stats": {
+          "Attack Speed": 40,
+          "Cooldown Reduction": 15
+        },
+        "effects": [
+          "Time Anchor"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Claw of Horus",
+    "stages": [
+      {
+        "buy": 750,
+        "sell": 565,
+        "stats": {
+          "Attack Damage": 10,
+          "Attack Armor": 20
+        }
+      },
+      {
+        "buy": 1500,
+        "sell": 1125,
+        "stats": {
+          "Attack Damage": 15,
+          "Attack Armor": 25,
+          "Attack Lifesteal": 5
+        }
+      },
+      {
+        "buy": 2250,
+        "sell": 1690,
+        "stats": {
+          "Attack Damage": 20,
+          "Attack Armor": 30,
+          "Attack Lifesteal": 5
+        },
+        "effects": [
+          "Kinetic Armor"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Batman's Utility Belt",
+    "stages": [
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Health": 150,
+          "Attack Speed": 10,
+          "Cooldown Reduction": 5
+        }
+      },
+      {
+        "buy": 1750,
+        "sell": 1500,
+        "stats": {
+          "Health": 200,
+          "Attack Speed": 15,
+          "Cooldown Reduction": 10
+        }
+      },
+      {
+        "buy": 2500,
+        "sell": 1910,
+        "stats": {
+          "Move Speed": 5,
+          "Health": 300,
+          "Attack Speed": 20,
+          "Cooldown Reduction": 15
+        }
+      },
+      {
+        "buy": 3250,
+        "sell": 2440,
+        "stats": {
+          "Move Speed": 5,
+          "Health": 300,
+          "Attack Speed": 20,
+          "Cooldown Reduction": 15
+        },
+        "effects": [
+          "Purge"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sword of Beowulf",
+    "stages": [
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Attack Damage": 20,
+          "Power Armor": 10
+        }
+      },
+      {
+        "buy": 2000,
+        "sell": 1500,
+        "stats": {
+          "Attack Damage": 40,
+          "Power Armor": 20
+        }
+      },
+      {
+        "buy": 3000,
+        "sell": 2250,
+        "stats": {
+          "Attack Damage": 50,
+          "Power Armor": 30
+        },
+        "effects": [
+          "Response Shield",
+          "Desperate Endurance"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Deadshot's Visor",
+    "stages": [
+      {
+        "buy": 500,
+        "sell": 450,
+        "stats": {
+          "Will": 100,
+          "Will Regeneration": 2,
+          "Attack Damage": 5
+        }
+      },
+      {
+        "buy": 1250,
+        "sell": 940,
+        "stats": {
+          "Will": 150,
+          "Will Regeneration": 5,
+          "Attack Damage": 10
+        },
+        "effects": [
+          "Will Battery"
+        ]
+      },
+      {
+        "buy": 2250,
+        "sell": 1690,
+        "stats": {
+          "Will": 200,
+          "Will Regeneration": 5,
+          "Attack Damage": 20
+        },
+        "effects": [
+          "Will Battery",
+          "Force of Will"
+        ]
+      },
+      {
+        "buy": 3250,
+        "sell": 2440,
+        "stats": {
+          "Will": 400,
+          "Will Regeneration": 8,
+          "Attack Damage": 40
+        },
+        "effects": [
+          "Will Battery",
+          "Force of Will",
+          "Intensity"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Joe Chill's Revolver",
+    "stages": [
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Attack Damage": 20,
+          "Critical Chance": 10
+        }
+      },
+      {
+        "buy": 2000,
+        "sell": 1500,
+        "stats": {
+          "Attack Damage": 40,
+          "Critical Chance": 15
+        }
+      },
+      {
+        "buy": 3000,
+        "sell": 2250,
+        "stats": {
+          "Attack Damage": 60,
+          "Critical Chance": 20
+        }
+      },
+      {
+        "buy": 4000,
+        "sell": 3000,
+        "stats": {
+          "Attack Damage": 70,
+          "Critical Chance": 25
+        },
+        "effects": [
+          "Deadly"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Deathstroke's Claymore",
+    "stages": [
+      {
+        "buy": 1500,
+        "sell": 1125,
+        "stats": {
+          "Attack Damage": 25,
+          "Attack Speed": 15
+        }
+      },
+      {
+        "buy": 3000,
+        "sell": 2250,
+        "stats": {
+          "Attack Damage": 50,
+          "Attack Speed": 25
+        },
+        "effects": [
+          "Slayer"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Nil Cloak",
+    "stages": [
+      {
+        "buy": 500,
+        "sell": 165,
+        "stats": {
+          "Health": 125,
+          "Health Regeneration": 15,
+          "Attack Armor": 15
+        },
+        "effects": [
+          "Toughness"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Olympus Gambit",
+    "stages": [
+      {
+        "buy": 250,
+        "sell": 225,
+        "stats": {
+          "Health": 100
+        }
+      },
+      {
+        "buy": 750,
+        "sell": 565,
+        "stats": {
+          "Health": 250
+        },
+        "effects": [
+          "Investment (Stacking)"
+        ]
+      },
+      {
+        "buy": 1750,
+        "sell": 1315,
+        "stats": {
+          "Health": 250,
+          "Attack Armor": 15,
+          "Power Armor": 15
+        },
+        "effects": [
+          "Olympus Aura"
+        ]
+      },
+      {
+        "buy": 2250,
+        "sell": 1690,
+        "stats": {
+          "Health": 250,
+          "Attack Armor": 20,
+          "Power Armor": 20
+        },
+        "effects": [
+          "Olympus Aura",
+          "Bastion"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hawkman's Harness",
+    "stages": [
+      {
+        "buy": 250,
+        "sell": 225,
+        "stats": {
+          "Health": 80
+        }
+      },
+      {
+        "buy": 500,
+        "sell": 375,
+        "stats": {
+          "Health": 160
+        }
+      },
+      {
+        "buy": 750,
+        "sell": 565,
+        "stats": {
+          "Health": 240
+        }
+      },
+      {
+        "buy": 1000,
+        "sell": 1000,
+        "stats": {
+          "Health": 320
+        },
+        "effects": [
+          "Refundable"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Steel's Breastplate",
+    "stages": [
+      {
+        "buy": 500,
+        "sell": 450,
+        "stats": {
+          "Will": 150,
+          "Attack Armor": 10
+        }
+      },
+      {
+        "buy": 1250,
+        "sell": 940,
+        "stats": {
+          "Will": 300,
+          "Attack Armor": 30
+        }
+      },
+      {
+        "buy": 2000,
+        "sell": 1500,
+        "stats": {
+          "Move Speed": 20,
+          "Will": 300,
+          "Attack Armor": 60
+        },
+        "effects": [
+          "Iron Will"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Crime Bible",
+    "stages": [
+      {
+        "buy": 500,
+        "sell": 450,
+        "stats": {
+          "Health": 100,
+          "Health Regeneration": 20
+        }
+      },
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Health": 150,
+          "Health Regeneration": 20
+        },
+        "effects": [
+          "Health Harvest"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Diana's Bracers",
+    "stages": [
+      {
+        "buy": 750,
+        "sell": 565,
+        "stats": {
+          "Resilience": 15,
+          "Health Regeneration": 25
+        }
+      },
+      {
+        "buy": 1500,
+        "sell": 1125,
+        "stats": {
+          "Resilience": 30,
+          "Health Regeneration": 25
+        },
+        "effects": [
+          "Health Balance"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Spear of Destiny",
+    "stages": [
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Attack Damage": 10,
+          "Power Armor": 35
+        }
+      },
+      {
+        "buy": 2250,
+        "sell": 1690,
+        "stats": {
+          "Attack Damage": 20,
+          "Power Armor": 55
+        },
+        "effects": [
+          "Enforcement"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ruby of Life",
+    "stages": [
+      {
+        "buy": 500,
+        "sell": 450,
+        "stats": {
+          "Health": 100,
+          "Health Regeneration": 10
+        }
+      },
+      {
+        "buy": 1250,
+        "sell": 940,
+        "stats": {
+          "Health": 100,
+          "Health Regeneration": 10
+        },
+        "effects": [
+          "Health Collector"
+        ]
+      },
+      {
+        "buy": 2250,
+        "sell": 1690,
+        "stats": {
+          "Health": 400,
+          "Health Regeneration": 25
+        },
+        "effects": [
+          "Health Collector"
+        ]
+      },
+      {
+        "buy": 2750,
+        "sell": 2065,
+        "stats": {
+          "Resilience": 15,
+          "Health": 400,
+          "Health Regeneration": 25
+        },
+        "effects": [
+          "Health Collector"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Entropy Aegis",
+    "stages": [
+      {
+        "buy": 750,
+        "sell": 565,
+        "stats": {
+          "Will": 100,
+          "Power Armor": 25
+        }
+      },
+      {
+        "buy": 1500,
+        "sell": 1125,
+        "stats": {
+          "Health": 100,
+          "Will": 100,
+          "Power Armor": 50
+        }
+      },
+      {
+        "buy": 2250,
+        "sell": 1690,
+        "stats": {
+          "Health": 200,
+          "Will": 100,
+          "Power Armor": 60
+        },
+        "effects": [
+          "Skill Block"
+        ]
+      },
+      {
+        "buy": 3000,
+        "sell": 2250,
+        "stats": {
+          "Health": 300,
+          "Will": 200,
+          "Power Armor": 70
+        },
+        "effects": [
+          "Skill Block"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ra's al Ghul's Robe",
+    "stages": [
+      {
+        "buy": 1250,
+        "sell": 940,
+        "stats": {
+          "Attack Armor": 30,
+          "Power Armor": 30
+        }
+      },
+      {
+        "buy": 2750,
+        "sell": 2065,
+        "stats": {
+          "Attack Armor": 60,
+          "Power Armor": 40
+        },
+        "effects": [
+          "Lazarus Effect"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Marauder Shield",
+    "stages": [
+      {
+        "buy": 250,
+        "sell": 225,
+        "stats": {
+          "Health": 75
+        },
+        "effects": [
+          "Marauder Burst 1",
+          "Marauder Edge"
+        ]
+      },
+      {
+        "buy": 750,
+        "sell": 565,
+        "stats": {
+          "Health": 200,
+          "Health Regeneration": 20
+        },
+        "effects": [
+          "Marauder Burst 3",
+          "Marauder Edge"
+        ]
+      },
+      {
+        "buy": 1250,
+        "sell": 940,
+        "stats": {
+          "Resilience": 10,
+          "Health": 200,
+          "Health Regeneration": 20
+        },
+        "effects": [
+          "Marauder Burst 4"
+        ]
+      },
+      {
+        "buy": 2250,
+        "sell": 1690,
+        "stats": {
+          "Resilience": 30,
+          "Health": 400,
+          "Health Regeneration": 20
+        },
+        "effects": [
+          "Marauder Burst 4"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Oa Gambit",
+    "stages": [
+      {
+        "buy": 250,
+        "sell": 225,
+        "stats": {
+          "Power Damage": 6,
+          "Power Armor": 6
+        }
+      },
+      {
+        "buy": 750,
+        "sell": 565,
+        "stats": {
+          "Power Damage": 15,
+          "Power Armor": 20
+        },
+        "effects": [
+          "Investment (Stacking)"
+        ]
+      },
+      {
+        "buy": 1750,
+        "sell": 1315,
+        "stats": {
+          "Power Damage": 50,
+          "Power Armor": 30
+        },
+        "effects": [
+          "Oa Aura"
+        ]
+      },
+      {
+        "buy": 2250,
+        "sell": 1690,
+        "stats": {
+          "Power Damage": 55,
+          "Power Armor": 35
+        },
+        "effects": [
+          "Oa Aura",
+          "Protection Field"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Medusa Mask",
+    "stages": [
+      {
+        "buy": 250,
+        "sell": 225,
+        "stats": {
+          "Health": 75,
+          "Health Regeneration": 4
+        }
+      },
+      {
+        "buy": 500,
+        "sell": 375,
+        "stats": {
+          "Health": 100,
+          "Health Regeneration": 8,
+          "Will Regeneration": 4
+        }
+      },
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Health": 200,
+          "Health Regeneration": 10,
+          "Will Regeneration": 6
+        },
+        "effects": [
+          "Medisys"
+        ]
+      },
+      {
+        "buy": 1500,
+        "sell": 1125,
+        "stats": {
+          "Health": 300,
+          "Health Regeneration": 20,
+          "Will Regeneration": 10
+        },
+        "effects": [
+          "Medisys"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Phantom Stranger's Necklace",
+    "stages": [
+      {
+        "buy": 250,
+        "sell": 225,
+        "stats": {
+          "Attack Armor": 6,
+          "Power Armor": 6
+        }
+      },
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Attack Armor": 10,
+          "Power Armor": 10,
+          "Cooldown Reduction": 10
+        },
+        "effects": [
+          "Armor Collector"
+        ]
+      },
+      {
+        "buy": 2000,
+        "sell": 1500,
+        "stats": {
+          "Attack Armor": 30,
+          "Power Armor": 30,
+          "Cooldown Reduction": 15
+        },
+        "effects": [
+          "Armor Collector"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Amulet of Isis",
+    "stages": [
+      {
+        "buy": 500,
+        "sell": 450,
+        "stats": {
+          "Health": 100,
+          "Will Regeneration": 2,
+          "Cooldown Reduction": 5
+        }
+      },
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Health": 200,
+          "Will Regeneration": 4,
+          "Cooldown Reduction": 10
+        }
+      },
+      {
+        "buy": 2000,
+        "sell": 1500,
+        "stats": {
+          "Health": 300,
+          "Will Regeneration": 25,
+          "Cooldown Reduction": 15
+        },
+        "effects": [
+          "Mercury's Gift"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Metallo's Heart",
+    "stages": [
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Will": 150,
+          "Attack Armor": 30
+        }
+      },
+      {
+        "buy": 2000,
+        "sell": 1500,
+        "stats": {
+          "Will": 250,
+          "Attack Armor": 40,
+          "Cooldown Reduction": 15
+        }
+      },
+      {
+        "buy": 3000,
+        "sell": 2250,
+        "stats": {
+          "Will": 350,
+          "Attack Armor": 50,
+          "Cooldown Reduction": 20
+        },
+        "effects": [
+          "Dampening Aura"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Helm of Fate",
+    "stages": [
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Attack Armor": 20,
+          "Power Damage": 30
+        }
+      },
+      {
+        "buy": 2000,
+        "sell": 1500,
+        "stats": {
+          "Attack Armor": 35,
+          "Power Damage": 60
+        }
+      },
+      {
+        "buy": 3000,
+        "sell": 2250,
+        "stats": {
+          "Attack Armor": 50,
+          "Power Damage": 90
+        },
+        "effects": [
+          "Mystical Conversion"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Suit of Sorrows",
+    "stages": [
+      {
+        "buy": 750,
+        "sell": 565,
+        "stats": {
+          "Attack Armor": 35
+        }
+      },
+      {
+        "buy": 1750,
+        "sell": 1315,
+        "stats": {
+          "Attack Armor": 70
+        },
+        "effects": [
+          "Mirror Defense 1"
+        ]
+      },
+      {
+        "buy": 2500,
+        "sell": 1875,
+        "stats": {
+          "Attack Armor": 100
+        },
+        "effects": [
+          "Mirror Defense 2"
+        ]
+      },
+      {
+        "buy": 3000,
+        "sell": 2250,
+        "stats": {
+          "Attack Armor": 100
+        },
+        "effects": [
+          "Mirror Defense 3"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Kryptonian War Armor",
+    "stages": [
+      {
+        "buy": 750,
+        "sell": 565,
+        "stats": {
+          "Health Regeneration": 10,
+          "Power Armor": 25
+        }
+      },
+      {
+        "buy": 1500,
+        "sell": 1125,
+        "stats": {
+          "Health Regeneration": 20,
+          "Power Armor": 50
+        }
+      },
+      {
+        "buy": 2250,
+        "sell": 1690,
+        "stats": {
+          "Move Speed": 10,
+          "Health Regeneration": 30,
+          "Power Armor": 60
+        },
+        "effects": [
+          "Vitality"
+        ]
+      },
+      {
+        "buy": 3000,
+        "sell": 2250,
+        "stats": {
+          "Move Speed": 30,
+          "Health Regeneration": 40,
+          "Power Armor": 70
+        },
+        "effects": [
+          "Vitality"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fragment of Mogo",
+    "stages": [
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Health": 200,
+          "Attack Armor": 25
+        }
+      },
+      {
+        "buy": 2000,
+        "sell": 1500,
+        "stats": {
+          "Health": 250,
+          "Attack Armor": 35,
+          "Cooldown Reduction": 15
+        }
+      },
+      {
+        "buy": 3000,
+        "sell": 2250,
+        "stats": {
+          "Health": 300,
+          "Attack Armor": 45,
+          "Cooldown Reduction": 15
+        },
+        "effects": [
+          "Burning Core"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Nil Ring",
+    "stages": [
+      {
+        "buy": 500,
+        "sell": 165,
+        "stats": {
+          "Health": 75,
+          "Will": 75,
+          "Will Regeneration": 7,
+          "Power Damage": 15
+        }
+      }
+    ]
+  },
+  {
+    "name": "Qward Gambit",
+    "stages": [
+      {
+        "buy": 250,
+        "sell": 225,
+        "stats": {
+          "Will Regeneration": 8
+        }
+      },
+      {
+        "buy": 750,
+        "sell": 565,
+        "stats": {
+          "Will Regeneration": 8,
+          "Power Damage": 20
+        },
+        "effects": [
+          "Investment (Stacking)"
+        ]
+      },
+      {
+        "buy": 1750,
+        "sell": 1315,
+        "stats": {
+          "Will Regeneration": 8,
+          "Power Damage": 40
+        },
+        "effects": [
+          "Qward Aura"
+        ]
+      },
+      {
+        "buy": 2250,
+        "sell": 1690,
+        "stats": {
+          "Will Regeneration": 8,
+          "Power Damage": 50
+        },
+        "effects": [
+          "Qward Aura",
+          "Scanning"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Radion Shard",
+    "stages": [
+      {
+        "buy": 250,
+        "sell": 225,
+        "stats": {
+          "Power Damage": 10
+        }
+      },
+      {
+        "buy": 500,
+        "sell": 375,
+        "stats": {
+          "Power Damage": 20
+        }
+      },
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Power Damage": 40
+        }
+      },
+      {
+        "buy": 1500,
+        "sell": 1500,
+        "stats": {
+          "Power Damage": 60
+        },
+        "effects": [
+          "Refundable"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Neron's Contract",
+    "stages": [
+      {
+        "buy": 500,
+        "sell": 450,
+        "stats": {
+          "Attack Armor": 15,
+          "Power Damage": 10
+        }
+      },
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Attack Armor": 25,
+          "Power Damage": 25
+        }
+      },
+      {
+        "buy": 1750,
+        "sell": 1315,
+        "stats": {
+          "Move Speed": 5,
+          "Attack Armor": 40,
+          "Power Damage": 40
+        }
+      },
+      {
+        "buy": 2750,
+        "sell": 2065,
+        "stats": {
+          "Move Speed": 10,
+          "Attack Armor": 50,
+          "Power Damage": 50
+        },
+        "effects": [
+          "Stasis Field"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fatality's Energy Lance",
+    "stages": [
+      {
+        "buy": 500,
+        "sell": 450,
+        "stats": {
+          "Power Damage": 25
+        }
+      },
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Power Damage": 40,
+          "Cooldown Reduction": 5
+        }
+      },
+      {
+        "buy": 1500,
+        "sell": 1125,
+        "stats": {
+          "Power Damage": 60,
+          "Cooldown Reduction": 10
+        }
+      },
+      {
+        "buy": 2250,
+        "sell": 1690,
+        "stats": {
+          "Power Damage": 60,
+          "Cooldown Reduction": 15
+        },
+        "effects": [
+          "Energy Blast"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Eye of Ekron",
+    "stages": [
+      {
+        "buy": 500,
+        "sell": 450,
+        "stats": {
+          "Move Speed": 5,
+          "Will": 125,
+          "Power Damage": 10
+        }
+      },
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Move Speed": 5,
+          "Will": 150,
+          "Power Damage": 10,
+          "Cooldown Reduction": 10
+        },
+        "effects": [
+          "Shrapnel"
+        ]
+      },
+      {
+        "buy": 1750,
+        "sell": 1315,
+        "stats": {
+          "Move Speed": 10,
+          "Will": 200,
+          "Power Damage": 20,
+          "Cooldown Reduction": 20
+        },
+        "effects": [
+          "Shrapnel"
+        ]
+      },
+      {
+        "buy": 2500,
+        "sell": 1875,
+        "stats": {
+          "Move Speed": 10,
+          "Will": 250,
+          "Power Damage": 50,
+          "Cooldown Reduction": 20
+        },
+        "effects": [
+          "Shrapnel"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Pandora's Box",
+    "stages": [
+      {
+        "buy": 500,
+        "sell": 450,
+        "stats": {
+          "Cooldown Reduction": 5,
+          "Power Lifesteal": 5
+        }
+      },
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Cooldown Reduction": 10,
+          "Power Lifesteal": 10
+        }
+      },
+      {
+        "buy": 1500,
+        "sell": 1125,
+        "stats": {
+          "Cooldown Reduction": 15,
+          "Power Lifesteal": 15
+        }
+      },
+      {
+        "buy": 2000,
+        "sell": 1500,
+        "stats": {
+          "Cooldown Reduction": 20,
+          "Power Lifesteal": 20
+        },
+        "effects": [
+          "Blood Spirit"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Psi-Scimitar",
+    "stages": [
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Attack Damage": 15,
+          "Power Damage": 20
+        }
+      },
+      {
+        "buy": 2000,
+        "sell": 1500,
+        "stats": {
+          "Attack Damage": 25,
+          "Power Damage": 40
+        },
+        "effects": [
+          "Skilled Attack 1"
+        ]
+      },
+      {
+        "buy": 3000,
+        "sell": 2250,
+        "stats": {
+          "Attack Damage": 40,
+          "Power Damage": 60
+        },
+        "effects": [
+          "Skilled Attack 2"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Abin Sur's Lantern",
+    "stages": [
+      {
+        "buy": 500,
+        "sell": 450,
+        "stats": {
+          "Will": 100,
+          "Will Regeneration": 2,
+          "Power Damage": 10
+        }
+      },
+      {
+        "buy": 1250,
+        "sell": 940,
+        "stats": {
+          "Will": 150,
+          "Will Regeneration": 5,
+          "Power Damage": 20
+        },
+        "effects": [
+          "Will Battery"
+        ]
+      },
+      {
+        "buy": 2250,
+        "sell": 1690,
+        "stats": {
+          "Will": 200,
+          "Will Regeneration": 5,
+          "Power Damage": 40
+        },
+        "effects": [
+          "Will Battery",
+          "Will Force"
+        ]
+      },
+      {
+        "buy": 3250,
+        "sell": 2440,
+        "stats": {
+          "Will": 400,
+          "Will Regeneration": 8,
+          "Power Damage": 80
+        },
+        "effects": [
+          "Will Battery",
+          "Will Force"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Book of Eternity",
+    "stages": [
+      {
+        "buy": 1250,
+        "sell": 940,
+        "stats": {
+          "Power Damage": 50
+        },
+        "effects": [
+          "Arcane 1"
+        ]
+      },
+      {
+        "buy": 2500,
+        "sell": 1875,
+        "stats": {
+          "Power Damage": 80
+        },
+        "effects": [
+          "Arcane 2"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Starheart",
+    "stages": [
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Power Damage": 45
+        }
+      },
+      {
+        "buy": 2000,
+        "sell": 1500,
+        "stats": {
+          "Power Damage": 90
+        }
+      },
+      {
+        "buy": 3000,
+        "sell": 2250,
+        "stats": {
+          "Power Damage": 135
+        }
+      },
+      {
+        "buy": 4000,
+        "sell": 3000,
+        "stats": {
+          "Power Damage": 140
+        },
+        "effects": [
+          "Power Feedback"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Marauder Ring",
+    "stages": [
+      {
+        "buy": 250,
+        "sell": 225,
+        "stats": {
+          "Power Damage": 10
+        },
+        "effects": [
+          "Marauder Burst 2"
+        ]
+      },
+      {
+        "buy": 750,
+        "sell": 565,
+        "stats": {
+          "Will Regeneration": 10,
+          "Power Damage": 20
+        },
+        "effects": [
+          "Marauder Burst 4"
+        ]
+      },
+      {
+        "buy": 1250,
+        "sell": 940,
+        "stats": {
+          "Will Regeneration": 10,
+          "Power Damage": 40
+        },
+        "effects": [
+          "Marauder Burst 4"
+        ]
+      },
+      {
+        "buy": 2250,
+        "sell": 1690,
+        "stats": {
+          "Will Regeneration": 10,
+          "Power Damage": 70,
+          "Cooldown Reduction": 15
+        },
+        "effects": [
+          "Marauder Burst 4"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Doctor Destiny's Dreamstone",
+    "stages": [
+      {
+        "buy": 250,
+        "sell": 225,
+        "stats": {
+          "Will Regeneration": 8
+        }
+      },
+      {
+        "buy": 750,
+        "sell": 565,
+        "stats": {
+          "Will Regeneration": 8,
+          "Power Armor": 20
+        },
+        "effects": [
+          "Will Balance"
+        ]
+      },
+      {
+        "buy": 1750,
+        "sell": 1315,
+        "stats": {
+          "Will Regeneration": 16,
+          "Power Damage": 30,
+          "Power Armor": 20,
+          "Cooldown Reduction": 10
+        },
+        "effects": [
+          "Will Balance"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gorilla Grodd's Helmet",
+    "stages": [
+      {
+        "buy": 250,
+        "sell": 225,
+        "stats": {
+          "Will": 75,
+          "Will Regeneration": 3
+        }
+      },
+      {
+        "buy": 500,
+        "sell": 375,
+        "stats": {
+          "Will": 100,
+          "Will Regeneration": 10
+        }
+      },
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Resilience": 10,
+          "Will": 150,
+          "Will Regeneration": 15
+        }
+      },
+      {
+        "buy": 1500,
+        "sell": 1125,
+        "stats": {
+          "Resilience": 20,
+          "Will": 200,
+          "Will Regeneration": 25
+        }
+      }
+    ]
+  },
+  {
+    "name": "The Logoz",
+    "stages": [
+      {
+        "buy": 250,
+        "sell": 225,
+        "stats": {
+          "Will": 50,
+          "Power Damage": 5
+        },
+        "effects": [
+          "Will Restore"
+        ]
+      },
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Will": 150,
+          "Power Damage": 20
+        },
+        "effects": [
+          "Power Damage Collector",
+          "Will Restore"
+        ]
+      },
+      {
+        "buy": 2000,
+        "sell": 1500,
+        "stats": {
+          "Will": 300,
+          "Power Damage": 55
+        },
+        "effects": [
+          "Power Damage Collector",
+          "Will Restore"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Two Face's Coin",
+    "stages": [
+      {
+        "buy": 500,
+        "sell": 450,
+        "stats": {
+          "Power Damage": 30
+        }
+      },
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Power Damage": 30
+        },
+        "effects": [
+          "Power Harvest"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Blue Scarab",
+    "stages": [
+      {
+        "buy": 750,
+        "sell": 565,
+        "stats": {
+          "Attack Speed": 10,
+          "Power Damage": 15
+        }
+      },
+      {
+        "buy": 1500,
+        "sell": 1125,
+        "stats": {
+          "Attack Speed": 20,
+          "Power Damage": 15
+        },
+        "effects": [
+          "Charged Armor"
+        ]
+      },
+      {
+        "buy": 2500,
+        "sell": 1875,
+        "stats": {
+          "Attack Speed": 40,
+          "Power Damage": 15
+        },
+        "effects": [
+          "Charged Armor",
+          "Charged Attack"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Cosmic Staff",
+    "stages": [
+      {
+        "buy": 500,
+        "sell": 450,
+        "stats": {
+          "Power Damage": 25
+        }
+      },
+      {
+        "buy": 1000,
+        "sell": 750,
+        "stats": {
+          "Power Damage": 50
+        }
+      },
+      {
+        "buy": 1500,
+        "sell": 1125,
+        "stats": {
+          "Power Damage": 60
+        },
+        "effects": [
+          "Devastating 1"
+        ]
+      },
+      {
+        "buy": 2500,
+        "sell": 1875,
+        "stats": {
+          "Power Damage": 70
+        },
+        "effects": [
+          "Disintegration",
+          "Devastating 2"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Atlantean Royal Seal",
+    "stages": [
+      {
+        "buy": 750,
+        "sell": 565,
+        "stats": {
+          "Health": 100,
+          "Power Damage": 20
+        }
+      },
+      {
+        "buy": 1500,
+        "sell": 1125,
+        "stats": {
+          "Health": 300,
+          "Power Damage": 30
+        }
+      },
+      {
+        "buy": 2250,
+        "sell": 1690,
+        "stats": {
+          "Health": 400,
+          "Power Damage": 50
+        }
+      },
+      {
+        "buy": 3000,
+        "sell": 2250,
+        "stats": {
+          "Health": 400,
+          "Power Damage": 60
+        },
+        "effects": [
+          "Skill Harrier"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Eclipso's Diamond",
+    "stages": [
+      {
+        "buy": 1500,
+        "sell": 1125,
+        "stats": {
+          "Power Damage": 50,
+          "Power Lifesteal": 10
+        }
+      },
+      {
+        "buy": 3000,
+        "sell": 2250,
+        "stats": {
+          "Power Damage": 100,
+          "Power Lifesteal": 20
+        }
+      }
+    ]
+  },
+  {
+    "name": "Health Pack",
+    "stages": [
+      {
+        "buy": 50,
+        "sell": 25,
+        "stats": {},
+        "effects": [
+          "Health Pack"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Will Pack",
+    "stages": [
+      {
+        "buy": 50,
+        "sell": 25,
+        "stats": {},
+        "effects": [
+          "Will Pack"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tektite Vial",
+    "stages": [
+      {
+        "buy": 250,
+        "sell": 125,
+        "stats": {},
+        "effects": [
+          "Tektite Vial"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bleed Portal",
+    "stages": [
+      {
+        "buy": 500,
+        "sell": 375,
+        "stats": {},
+        "effects": [
+          "Bleed Tunneling"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Speed Force Battery",
+    "stages": [
+      {
+        "buy": 750,
+        "sell": 565,
+        "stats": {
+          "Move Speed": 20
+        }
+      },
+      {
+        "buy": 2750,
+        "sell": 2065,
+        "stats": {
+          "Move Speed": 20
+        },
+        "effects": [
+          "Blink Jump"
+        ]
+      }
+    ]
+  }
+]

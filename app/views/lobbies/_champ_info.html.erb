@@ -1,3 +1,12 @@
-<div class="content right_content champ_info" side="right">
-  Champ Info
+<div class="content champ-info" side="right">
+	<% c = @champions.first %>
+	<div class="champ-box" type="champ-info">
+      <%= champion_portrait_image(c) %>
+      <div class="name">
+      	<%= c.name %>
+      </div>
+      <div class="title">
+      	<%= c.title %>
+      </div>
+    </div>
 </div>

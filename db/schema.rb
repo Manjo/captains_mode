@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131022041213) do
+ActiveRecord::Schema.define(version: 20131029205455) do
 
   create_table "champion_bans", force: true do |t|
     t.integer  "champion_id"
@@ -33,6 +33,47 @@ ActiveRecord::Schema.define(version: 20131022041213) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "title"
+  end
+
+  create_table "item_effects", force: true do |t|
+    t.string   "resource"
+    t.string   "name"
+    t.string   "type"
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "item_effects_stages", force: true do |t|
+    t.integer "item_stage_id"
+    t.integer "item_effect_id"
+  end
+
+  create_table "item_stages", force: true do |t|
+    t.integer  "stage"
+    t.integer  "cost"
+    t.integer  "refund"
+    t.integer  "item_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "item_stages_stats", force: true do |t|
+    t.integer "item_stage_id"
+    t.integer "item_stat_id"
+  end
+
+  create_table "item_stats", force: true do |t|
+    t.string   "type"
+    t.string   "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "items", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "lobbies", force: true do |t|
